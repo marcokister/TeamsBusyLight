@@ -20,16 +20,6 @@ ser = serial.Serial(PICO_PORT, 115200, timeout=1)
 
 # endregion
 
-# region ---- loeschen
-# Erfasste Koordinaten des roten Punkts im Taskleisten-Icon
-#PIXEL_X = 1721
-#PIXEL_Y = 1059
-
-# Reines Rot + Toleranzbereich
-#RED_RGB = (196, 49, 75)
-#TOLERANCE = 15
-
-# endregion
 
 
 def send_to_pico(state):
@@ -52,8 +42,8 @@ def is_teams_busy():
 
 
 def monitor_teams_status():
-    print("📡 Starte Teams-Statusüberwachung über Taskleisten-Icon...")
-    print(f"🔍 Überwache Pixel an Position ({PIXEL_X}, {PIXEL_Y})...")
+    print("Starte Teams-Statusüberwachung über Taskleisten-Icon...")
+    print(f"Überwache Pixel an Position ({PIXEL_X}, {PIXEL_Y})...")
     last_state = None
     while True:
         try:
@@ -77,3 +67,4 @@ def monitor_teams_status():
 
 if __name__ == "__main__":
     monitor_teams_status()
+
