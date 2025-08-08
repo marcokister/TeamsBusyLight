@@ -11,3 +11,11 @@ This is perfect for home offices or shared workspaces where a visual "Do Not Dis
 4. don´t forget to check in vscode if your interpreter is with (venv) marked!!!
 5. now you are ready to develop your own version :-) have fun
 
+
+## Needed Hardware:
+- Raspberry Pi Pico or newer like Pico 2W
+- Install microPython on the Pico
+- USB Cable between pico and your computer while developping
+- if you want activate more than an led you need a relais and some other stuff
+!! always be safe and you have to know what you do with electic!!
+
