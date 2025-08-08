@@ -4,10 +4,10 @@ import machine
 import sys
 import time
 
-# LED am Board (GPIO 25)
+# LED am Board GPIO 25
 led = machine.Pin(25, machine.Pin.OUT)
 
-# GPIO für Relais (z. B. GPIO 15)
+# GPIO15 für Relais
 relais = machine.Pin(15, machine.Pin.OUT)
 
 # Initialzustand: aus
@@ -33,4 +33,5 @@ while True:
             relais.value(0)
     except Exception as e:
         print("Fehler:", e)
+
 
