@@ -4,10 +4,10 @@ import machine
 import sys
 import time
 
-# LED am Board GPIO 25
+# interne LED GPIO 25
 led = machine.Pin(25, machine.Pin.OUT)
 
-# GPIO15 für Relais
+# GPIO15 Relais
 relais = machine.Pin(15, machine.Pin.OUT)
 
 # Initialzustand: aus
@@ -20,7 +20,7 @@ for i in range(0,2):
     led.value(0)
     time.sleep(.08)
 
-print("Bereit. Warte auf PC...")
+#print("Bereit. Warte auf PC...")
 
 while True:
     try:
@@ -33,5 +33,6 @@ while True:
             relais.value(0)
     except Exception as e:
         print("Fehler:", e)
+
 
 
